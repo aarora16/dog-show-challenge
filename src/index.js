@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function fetchAllDogs () {
-  // fetch all the dogs and input them into a table
   fetch(dogUrl)
     .then(res => res.json())
     .then(data => renderAllDogs(data))
